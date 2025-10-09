@@ -53,3 +53,72 @@ a:hover {
 .container {
   padding: 20px;
 }
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.list li {
+  position: relative;
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  padding: 15px;
+  gap: 5px;
+}
+
+.div-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  top: -15px;
+  right: -15px;
+  padding: 5px;
+  border: 1px solid var(--border);
+}
+
+.icon {
+  width: 10px;
+}
+
+.list img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.list strong {
+  font-size: 26px;
+}
+
+.type {
+  background-color: var(--bg);
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+}
+
+.type span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.Água {
+  background-color: #086bff;
+}
+
+.Fogo {
+  background-color: #ff3c00;
+}
+
+.Planta {
+  background-color: #75d309;
+}

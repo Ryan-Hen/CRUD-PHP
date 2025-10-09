@@ -3,9 +3,9 @@
 require __DIR__ . '/conn.php';
 
 $pokemons = [
-    ["Bulbasaur", "Um Pokémon do tipo Planta/Veneno.", "Planta", "bulbasaur.png"],
-    ["Charmander", "Um Pokémon do tipo Fogo.", "Fogo", "charmander.png"],
-    ["Squirtle", "Um Pokémon do tipo Água.", "Água", "squirtle.png"],
+    ["Bulbasaur", "Um Pokémon do tipo Planta/Veneno.", "Planta", "bulbasaur.jpg"],
+    ["Charmander", "Um Pokémon do tipo Fogo.", "Fogo", "charmander.webp"],
+    ["Squirtle", "Um Pokémon do tipo Água.", "Água", "squirtle.avif"],
 ];
 
 foreach($pokemons as $p) {
