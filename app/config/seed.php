@@ -8,7 +8,6 @@ $pokemons = [
     ["Squirtle", "Um Pokémon do tipo Água.", "Água", "squirtle.png"],
 ];
 
-
 foreach($pokemons as $p) {
   $stmt = $conn->prepare("INSERT INTO pokemons (name, description, type, image) VALUES (?, ?, ?, ?)");
   $stmt->bind_param("ssss", $p[0], $p[1], $p[2], $p[3]);
