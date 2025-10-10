@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 0.7s all;
 }
 
 body {
@@ -52,6 +53,9 @@ a:hover {
 
 .container {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list {
@@ -158,4 +162,95 @@ footer {
 
 small {
   color: var(--text-secondary);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container {
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 40px;
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field-container label {
+  font-size: 20px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.field-container input,
+.field-container textarea {
+  max-width: 100%;
+  background-color: var(--border);
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.field-container select {
+  background-color: var(--border);
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.field-container input:focus {
+  outline: 1px solid var(--success);
+}
+
+.field-container :focus {
+  outline: none;
+}
+
+input[type="file"] {
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+/* estiliza o botão "Escolher arquivo" */
+input[type="file"]::file-selector-button {
+  background-color: var(--bg-secondary);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: var(--success);
+}
+
+.send {
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.send:hover {
+  background-color: var(--success);
 }
