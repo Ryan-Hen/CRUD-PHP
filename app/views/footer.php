@@ -1,6 +1,10 @@
 </main>
 <footer>
-  <p>&copy; <?php echo date("Y"); ?> - Meu site de Pokémons</p>
+  <img class="logo" src="favicon.webp" />
+  <div class="container-info-footer">
+    <p>purely illustrative images</p>
+    <small> Poqmon © 2025 - all rights reserved</small>
+  </div>
 </footer>
 </body>
 

@@ -14,20 +14,20 @@
   <?php while ($pokemon = $pokemons->fetch_assoc()): ?>
   <li>
     <div class="div-icon">
-      <img class="icon" src="/pokemon/public/images/leaf.png"/>
+      <img class="icon" src="/pokemon/public/images/<?php echo htmlspecialchars($pokemon['type']); ?>.png" />
     </div>
     <?php if (!empty($pokemon['image'])): ?>
-      <img src="/pokemon/public/uploads/<?php echo htmlspecialchars($pokemon['image']); ?>"
+    <img src="/pokemon/public/uploads/<?php echo htmlspecialchars($pokemon['image']); ?>"
       alt="<?php echo htmlspecialchars($pokemon['name']); ?>" width="120">
     <?php endif; ?>
-    <div>
-      <strong><?php echo htmlspecialchars($pokemon['name']); ?></strong>
+    <div class="pokemon-name-container">
+      <span class="pokemon-name"><?php echo htmlspecialchars($pokemon['name']); ?></span>
     </div>
     <div class="type <?php echo htmlspecialchars($pokemon['type']); ?>">
       <span><?php echo htmlspecialchars($pokemon['type']); ?></span>
     </div>
-    <div>
-      <p><?php echo htmlspecialchars($pokemon['description']); ?></p>
+    <div class="pokemon-description-container">
+      <p class="description"><?php echo htmlspecialchars($pokemon['description']); ?></p>
     </div>
   </li>
   <?php endwhile; ?>

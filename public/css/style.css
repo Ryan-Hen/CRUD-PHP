@@ -69,7 +69,8 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 5px;
   width: 300px;
-  height: 400px;
+  height: fit-content;
+  min-height: 450px;
   padding: 15px;
   gap: 5px;
 }
@@ -84,10 +85,9 @@ a:hover {
   right: -15px;
   padding: 5px;
   border: 1px solid var(--border);
-}
-
-.icon {
-  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .list img {
@@ -95,8 +95,21 @@ a:hover {
   border-radius: 5px;
 }
 
-.list strong {
+.icon {
+  width: 100%;
+  height: 22px;
+  object-fit: contain;
+}
+
+.pokemon-name-container,
+.pokemon-description-container {
+  display: flex;
+  flex-direction: column;
+}
+.pokemon-name {
+  padding: 5px 0px 5px 0px;
   font-size: 26px;
+  font-weight: 600;
 }
 
 .type {
@@ -111,14 +124,38 @@ a:hover {
   color: #ffffff;
 }
 
-.Água {
+.Water {
   background-color: #086bff;
 }
 
-.Fogo {
+.Fire {
   background-color: #ff3c00;
 }
 
-.Planta {
+.Plant {
   background-color: #75d309;
+}
+
+.description {
+  margin-top: 5px;
+  padding: 5px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.container-info-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+small {
+  color: var(--text-secondary);
 }
