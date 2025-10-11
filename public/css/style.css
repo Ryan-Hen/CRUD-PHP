@@ -52,17 +52,20 @@ a:hover {
 }
 
 .container {
-  padding: 20px;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
 }
 
 .list {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .list li {
@@ -94,25 +97,57 @@ a:hover {
   justify-content: center;
 }
 
-.list img {
+.div-delete {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: var(--bg-secondary);
+  top: 0px;
+  left: 0px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-delete:hover {
+  background-color: var(--danger);
+}
+
+.pokemon-image {
   width: 100%;
+  object-fit: cover;
+  height: 280px;
   border-radius: 5px;
 }
 
 .icon {
   width: 100%;
   height: 22px;
-  object-fit: contain;
+  object-fit: contain !important;
 }
 
-.pokemon-name-container,
-.pokemon-description-container {
+.icon-delete {
+  width: 100%;
+  height: 16px;
+  object-fit: contain !important;
+}
+
+.pokemon-name-container {
   display: flex;
   flex-direction: column;
 }
+
+.pokemon-description-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 70px;
+  overflow-y: auto;
+}
 .pokemon-name {
   padding: 5px 0px 5px 0px;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -140,6 +175,9 @@ a:hover {
   background-color: #75d309;
 }
 
+.Eletric {
+  background-color: #ffc107;
+}
 .description {
   margin-top: 5px;
   padding: 5px;
@@ -172,7 +210,7 @@ form {
 
 .form-container {
   width: 800px;
-  height: 800px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   background-color: var(--bg-secondary);
@@ -253,4 +291,66 @@ input[type="file"]::file-selector-button:hover {
 }
 .send:hover {
   background-color: var(--success);
+}
+
+.pokemon-info-container {
+  display: flex;
+  gap: 8px;
+}
+
+.info {
+  width: 80px;
+  display: flex;
+  background-color: var(--bg);
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  padding: 5px 9px 5px 9px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info:hover {
+  transform: translateY(-3px);
+}
+
+.info img {
+  object-fit: contain;
+  width: 13px;
+  height: 13px !important;
+}
+
+.info small {
+  font-size: 13px;
+}
+
+.edit {
+  width: 100px;
+  display: flex;
+  background-color: var(--bg);
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  padding: 5px 9px 5px 9px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.edit:hover {
+  background-color: var(--border);
+}
+.edit img {
+  width: 13px;
+  object-fit: contain;
+}
+
+.line {
+  margin-top: 5px;
+  height: 1px;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 1px;
+}
+
+.line:hover {
+  background-color: var(--border);
 }

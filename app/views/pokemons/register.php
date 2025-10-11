@@ -15,6 +15,7 @@
           <option value="Plant">Plant</option>
           <option value="Fire">Fire</option>
           <option value="Water">Water</option>
+          <option value="Eletric">Eletric</option>
         </select>
       </div>
       <div class="field-container">
@@ -22,7 +23,7 @@
         <input name="poqmon-image" id="poqmon-image" type="file">
       </div>
       <div class="field-container">
-      <input class="send" type="submit" name="send">
+        <input class="send" type="submit" name="send">
       </div>
     </form>
   </div>
