@@ -21,7 +21,7 @@
     </div>
     <?php if (!empty($pokemon['image'])): ?>
     <img class="pokemon-image" src="/pokemon/public/uploads/<?php echo htmlspecialchars($pokemon['image']); ?>"
-      alt="<?php echo htmlspecialchars($pokemon['name']); ?>" width="120">
+      alt="<?php echo htmlspecialchars($pokemon['name']); ?>">
     <?php endif; ?>
     <div class="pokemon-name-container">
       <span class="pokemon-name"><?php echo htmlspecialchars($pokemon['name']); ?></span>
@@ -45,7 +45,7 @@
         <img class="info-img" src="/pokemon/public/images/brain.png" />
         <small><?php echo htmlspecialchars($pokemon['intelligence']); ?></small>
       </div>
-      <a class="edit" href="#">
+      <a class="edit" href="/pokemon/public/update_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
         <img class="info-img" src="/pokemon/public/images/pencil.png" />
         <small>Edit</small>
       </a>
