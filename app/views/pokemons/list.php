@@ -12,13 +12,15 @@
 ?>
 <ul class="list">
   <?php while ($pokemon = $pokemons->fetch_assoc()): ?>
-  <li id="">
+  <li>
     <div class="div-icon">
       <img class="icon" src="/pokemon/public/images/<?php echo htmlspecialchars($pokemon['type']); ?>.png" />
     </div>
-    <div class="div-delete">
-      <img class="icon-delete" src="/pokemon/public/images/close.png" />
-    </div>
+    <a href="/pokemon/public/delete_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
+      <div class="div-delete">
+        <img class="icon-delete" src="/pokemon/public/images/close.png" />
+      </div>
+    </a>
     <?php if (!empty($pokemon['image'])): ?>
     <img class="pokemon-image" src="/pokemon/public/uploads/<?php echo htmlspecialchars($pokemon['image']); ?>"
       alt="<?php echo htmlspecialchars($pokemon['name']); ?>">

@@ -11,8 +11,6 @@
   }
 
   $id = intval($_GET["id"]);
-
-  $new_image = "";
   
   $query = "SELECT * FROM pokemons WHERE id = " . $id;
   $current_poqmon = $conn->query($query)->fetch_assoc();

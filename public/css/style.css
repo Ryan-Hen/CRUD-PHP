@@ -76,8 +76,7 @@ a:hover {
   border: 1px solid var(--border);
   border-radius: 5px;
   width: 300px;
-  height: fit-content;
-  min-height: 450px;
+  min-height: 500px;
   padding: 15px;
   gap: 5px;
 }
@@ -126,6 +125,11 @@ a:hover {
   width: 100%;
   height: 22px;
   object-fit: contain !important;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: rotateY(180deg);
 }
 
 .icon-delete {
@@ -157,10 +161,22 @@ a:hover {
   border-radius: 15px;
 }
 
+.type:hover {
+  background-color: var(--border);
+}
+
 .type span {
   font-size: 14px;
   font-weight: 600;
   color: #ffffff;
+  display: flex;
+}
+
+.type span:hover {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  transform: translateX(10px);
 }
 
 .Water {
@@ -360,4 +376,55 @@ input[type="file"]::file-selector-button:hover {
   height: 100px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.alert {
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.alert-container-confirm {
+  width: 500px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.alert-container-confirm h1 {
+  font-size: 20px;
+}
+
+.danger {
+  background-color: var(--danger);
+  border: 5px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.danger:hover {
+  background-color: var(--border);
+  border: 5px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel {
+  background-color: var(--border);
+  border: 5px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
 }
