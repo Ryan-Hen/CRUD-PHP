@@ -4,17 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/pokemon/public/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Poqmon</title>
-  <link rel="shortcut icon" href="/pokemon/public/favicon.webp" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.webp" type="image/x-icon">
 </head>
 
 <body>
   <header class="header">
-    <img class="logo" src="/pokemon/public/favicon.webp" />
+    <img class="logo" src="/favicon.webp" />
     <nav class="menu">
-      <a href="/pokemon/public/index.php">Home</a> |
-      <a href="/pokemon/public/register_pokemon.php">Register a new poqmon</a>
+      <a href="/index.php">Home</a> |
+      <a href="/register_pokemon.php">Register a new poqmon</a>
     </nav>
   </header>
   <main class="container">

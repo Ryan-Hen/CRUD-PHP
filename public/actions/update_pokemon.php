@@ -30,7 +30,7 @@ if($_FILES['poqmon-image']['error'] === 4 && isset($_FILES["poqmon-image"])){
 
   echo "<script>
     setTimeout(function() {
-      window.location.href = '/pokemon/public/';
+      window.location.href = '/
     }, 3000);
   </script>";
 
@@ -62,11 +62,11 @@ else {
 
   echo "<h1>Poqmon has successfully updated!</h1>";
 
-  echo "<p>Você será redirecionado em alguns segundos...</p>";
+  echo "<p>you will be redirected in a few seconds...</p>";
 
   echo "<script>
     setTimeout(function() {
-      window.location.href = '/pokemon/public/';
+      window.location.href = '/';
     }, 3000);
   </script>";
 

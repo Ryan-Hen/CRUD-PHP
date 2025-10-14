@@ -17,7 +17,7 @@
   ?>
 
   <div class="form-container">
-    <form enctype="multipart/form-data" method="POST" action="/pokemon/public/actions/update_pokemon.php">
+    <form enctype="multipart/form-data" method="POST" action="/actions/update_pokemon.php">
       <div class="field-container">
         <label for="poqmon-name">Poqmon Name:</label>
         <input required name="poqmon-name" id="poqmon-name"
@@ -45,8 +45,7 @@
         </div>
         <div
           style="width: 200px; display: flex; flex-direction: column; gap: 8px; justify-content: center; align-items: center">
-          <img class="current-image"
-            src="/pokemon/public/uploads/<?php echo htmlspecialchars($current_poqmon['image']); ?>"
+          <img class="current-image" src="/uploads/<?php echo htmlspecialchars($current_poqmon['image']); ?>"
             alt="<?php echo htmlspecialchars($current_poqmon['name']); ?>" />
           <small>Selected image</small>
         </div>

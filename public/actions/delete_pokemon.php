@@ -19,11 +19,11 @@
 
   echo "<h1>Poqmon has successfully deleted!</h1>";
 
-  echo "<p>Você será redirecionado em alguns segundos...</p>";
+  echo "<p>you will be redirected in a few seconds...</p>";
 
   echo "<script>
     setTimeout(function() {
-      window.location.href = '/pokemon/public/';
+      window.location.href = '/';
     }, 3000);
   </script>";
 

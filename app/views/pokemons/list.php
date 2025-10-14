@@ -14,15 +14,15 @@
   <?php while ($pokemon = $pokemons->fetch_assoc()): ?>
   <li>
     <div class="div-icon">
-      <img class="icon" src="/pokemon/public/images/<?php echo htmlspecialchars($pokemon['type']); ?>.png" />
+      <img class="icon" src="/images/<?php echo htmlspecialchars($pokemon['type']); ?>.png" />
     </div>
-    <a href="/pokemon/public/delete_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
+    <a href="/delete_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
       <div class="div-delete">
-        <img class="icon-delete" src="/pokemon/public/images/close.png" />
+        <img class="icon-delete" src="/images/close.png" />
       </div>
     </a>
     <?php if (!empty($pokemon['image'])): ?>
-    <img class="pokemon-image" src="/pokemon/public/uploads/<?php echo htmlspecialchars($pokemon['image']); ?>"
+    <img class="pokemon-image" src="/uploads/<?php echo htmlspecialchars($pokemon['image']); ?>"
       alt="<?php echo htmlspecialchars($pokemon['name']); ?>">
     <?php endif; ?>
     <div class="pokemon-name-container">
@@ -36,19 +36,19 @@
     </div>
     <div class="pokemon-info-container">
       <div class="info">
-        <img class="info-img" src="/pokemon/public/images/sword.png" />
+        <img class="info-img" src="/images/sword.png" />
         <small><?php echo htmlspecialchars($pokemon['attack']); ?></small>
       </div>
       <div class="info">
-        <img class="info-img" src="/pokemon/public/images/shield.png" />
+        <img class="info-img" src="/images/shield.png" />
         <small><?php echo htmlspecialchars($pokemon['defense']); ?></small>
       </div>
       <div class="info">
-        <img class="info-img" src="/pokemon/public/images/brain.png" />
+        <img class="info-img" src="/images/brain.png" />
         <small><?php echo htmlspecialchars($pokemon['intelligence']); ?></small>
       </div>
-      <a class="edit" href="/pokemon/public/update_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
-        <img class="info-img" src="/pokemon/public/images/pencil.png" />
+      <a class="edit" href="/update_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
+        <img class="info-img" src="/images/pencil.png" />
         <small>Edit</small>
       </a>
     </div>

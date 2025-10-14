@@ -1,5 +1,5 @@
   <div class="form-container">
-    <form enctype="multipart/form-data" method="POST" action="/pokemon/public/actions/register_pokemon.php">
+    <form enctype="multipart/form-data" method="POST" action="/actions/register_pokemon.php">
       <div class="field-container">
         <label for="poqmon-name">Poqmon Name:</label>
         <input required name="poqmon-name" id="poqmon-name">
@@ -20,7 +20,7 @@
       </div>
       <div class="field-container">
         <label for="poqmon-image">Select a image</label>
-        <input name="poqmon-image" id="poqmon-image" type="file">
+        <input required name="poqmon-image" id="poqmon-image" type="file">
       </div>
       <div class="field-container">
         <input class="send" type="submit" name="send">

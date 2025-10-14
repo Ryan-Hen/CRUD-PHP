@@ -5,3 +5,4 @@
 /public/uploads/*
 !/public/uploads/.gitkeep
 app/config/conn.php
+/db/

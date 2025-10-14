@@ -21,10 +21,10 @@
   <ul class="list">
     <li>
       <div class="div-icon">
-        <img class="icon" src="/pokemon/public/images/<?php echo htmlspecialchars($current_poqmon['type']); ?>.png" />
+        <img class="icon" src="/images/<?php echo htmlspecialchars($current_poqmon['type']); ?>.png" />
       </div>
       <?php if (!empty($current_poqmon['image'])): ?>
-      <img class="pokemon-image" src="/pokemon/public/uploads/<?php echo htmlspecialchars($current_poqmon['image']); ?>"
+      <img class="pokemon-image" src="/uploads/<?php echo htmlspecialchars($current_poqmon['image']); ?>"
         alt="<?php echo htmlspecialchars($current_poqmon['name']); ?>">
       <?php endif; ?>
       <div class="pokemon-name-container">
@@ -38,20 +38,19 @@
       </div>
       <div class="pokemon-info-container">
         <div class="info">
-          <img class="info-img" src="/pokemon/public/images/sword.png" />
+          <img class="info-img" src="/images/sword.png" />
           <small><?php echo htmlspecialchars($current_poqmon['attack']); ?></small>
         </div>
         <div class="info">
-          <img class="info-img" src="/pokemon/public/images/shield.png" />
+          <img class="info-img" src="/images/shield.png" />
           <small><?php echo htmlspecialchars($current_poqmon['defense']); ?></small>
         </div>
         <div class="info">
-          <img class="info-img" src="/pokemon/public/images/brain.png" />
+          <img class="info-img" src="/images/brain.png" />
           <small><?php echo htmlspecialchars($current_poqmon['intelligence']); ?></small>
         </div>
-        <a class="edit"
-          href="/pokemon/public/update_pokemon.php/?id=<?php echo htmlspecialchars($current_poqmon['id']); ?>">
-          <img class="info-img" src="/pokemon/public/images/pencil.png" />
+        <a class="edit" href="/update_pokemon.php/?id=<?php echo htmlspecialchars($current_poqmon['id']); ?>">
+          <img class="info-img" src="/images/pencil.png" />
           <small>Edit</small>
         </a>
       </div>
@@ -62,10 +61,10 @@
     <h1>Are you sure you want to delete this Poqmon? This action is irreversible.</h1>
 
     <div style="margin-top: 10px;">
-      <a href="/pokemon/public/actions/delete_pokemon.php?id=<?php echo htmlspecialchars($current_poqmon["id"]); ?>">
+      <a href="/actions/delete_pokemon.php?id=<?php echo htmlspecialchars($current_poqmon["id"]); ?>">
         <button class="danger">Delete</button>
       </a>
-      <a href="/pokemon/public/">
+      <a href="/">
         <button class="cancel">Cancel</button>
       </a>
     </div>
