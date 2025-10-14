@@ -12,6 +12,21 @@
 
   $id = intval($_GET["id"]);
 
+  $delete_image_query = "SELECT image FROM pokemons WHERE id = " . $id;
+  $old_image = $conn->query($delete_image_query)->fetch_assoc();
+  $image_to_delete_path = __DIR__ . "/../uploads/" . $old_image["image"];
+  
+  if(file_exists($image_to_delete_path)){
+    if(unlink($image_to_delete_path)){}
+    else {
+        exit("<h1>Something went wrong with delete old image operation...</h1>");
+    }
+  }else {
+    echo $image_to_delete_path;
+    exit("<h1>the old image cannot be find</h1>");
+  }
+
+
   $query = "DELETE FROM pokemons WHERE id = " . $id;
   $res = $conn->query($query);
 
