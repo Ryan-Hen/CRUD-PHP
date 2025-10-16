@@ -1,6 +1,6 @@
   <?php
 
-  include __DIR__ . "/../../config/conn.php";
+  include __DIR__ . "/../../../app/config/conn.php";
   
   if(!$_GET["id"]){
     exit("any id is guiven to proceed with the update process");

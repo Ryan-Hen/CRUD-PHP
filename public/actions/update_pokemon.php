@@ -22,19 +22,19 @@ if($_FILES['poqmon-image']['error'] === 4 && isset($_FILES["poqmon-image"])){
   $stmt->bind_param("ssss", $poqmon_name, $poqmon_description, $poqmon_type, $id);
   $stmt->execute();
 
-  require_once __DIR__ . "/../../app/views/header.php";
+  require_once __DIR__ . "/../views/header.php";
 
   echo "<h1>Poqmon has successfully updated!</h1>";
 
-  echo "<p>Você será redirecionado em alguns segundos...</p>";
+  echo "<p>you will be redirected in a few seconds...</p>";
 
   echo "<script>
     setTimeout(function() {
-      window.location.href = '/
+      window.location.href = '/'
     }, 3000);
   </script>";
 
-  require_once __DIR__ . "/../../app/views/footer.php";
+  require_once __DIR__ . "/../views/footer.php";
 }
 else {
   $uploaddir = __DIR__ . "/../uploads/";
@@ -72,7 +72,7 @@ else {
   $stmt->bind_param("ssssi", $poqmon_name, $poqmon_description, $poqmon_type, $poqmon_image, $id);
   $stmt->execute();
 
-  require_once __DIR__ . "/../../app/views/header.php";
+    require_once __DIR__ . "/../views/header.php";;
 
   echo "<h1>Poqmon has successfully updated!</h1>";
 
@@ -84,7 +84,7 @@ else {
     }, 3000);
   </script>";
 
-  require_once __DIR__ . "/../../app/views/footer.php";
+  require_once __DIR__ . "/../views/footer.php";
 }
 
 ?>

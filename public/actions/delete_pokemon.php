@@ -30,7 +30,7 @@
   $query = "DELETE FROM pokemons WHERE id = " . $id;
   $res = $conn->query($query);
 
-  require_once __DIR__ . "/../../app/views/header.php";
+  require_once __DIR__ . "/../views/header.php";
 
   echo "<h1>Poqmon has successfully deleted!</h1>";
 
@@ -42,6 +42,6 @@
     }, 3000);
   </script>";
 
-  require_once __DIR__ . "/../../app/views/footer.php";
+  require_once __DIR__ . "/../views/footer.php";
 
 ?>

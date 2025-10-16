@@ -1,6 +1,6 @@
 <?php 
 
-  include __DIR__ . "/../../config/conn.php";
+  include __DIR__ . "/../../../app/config/conn.php";
 
   $query = "SELECT * FROM pokemons";
   $pokemons = $conn->query($query);
@@ -16,7 +16,7 @@
     <div class="div-icon">
       <img class="icon" src="/images/<?php echo htmlspecialchars($pokemon['type']); ?>.png" />
     </div>
-    <a href="/delete_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
+    <a href="/views/delete.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
       <div class="div-delete">
         <img class="icon-delete" src="/images/close.png" />
       </div>
@@ -47,7 +47,7 @@
         <img class="info-img" src="/images/brain.png" />
         <small><?php echo htmlspecialchars($pokemon['intelligence']); ?></small>
       </div>
-      <a class="edit" href="/update_pokemon.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
+      <a class="edit" href="/views/update.php/?id=<?php echo htmlspecialchars($pokemon['id']); ?>">
         <img class="info-img" src="/images/pencil.png" />
         <small>Edit</small>
       </a>

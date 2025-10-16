@@ -41,7 +41,7 @@ $stmt->bind_param("ssssiii", $poqmon_name, $poqmon_description, $poqmon_type, $p
 $stmt->execute();
 
 
-require __DIR__ . "/../../app/views/header.php";
+require __DIR__ . "/../views/header.php";
 
 echo "<h1>Success!</h1>";
 
@@ -53,6 +53,6 @@ echo "<script>
   }, 3000);
 </script>";
 
-require __DIR__ . "/../../app/views/footer.php";
+require __DIR__ . "/../views/footer.php";
 
 ?>

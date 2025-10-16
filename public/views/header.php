@@ -14,7 +14,7 @@
     <img class="logo" src="/favicon.webp" />
     <nav class="menu">
       <a href="/index.php">Home</a> |
-      <a href="/register_pokemon.php">Register a new poqmon</a>
+      <a href="/views/register.php">Register a new poqmon</a>
     </nav>
   </header>
   <main class="container">
