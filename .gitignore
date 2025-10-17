@@ -4,5 +4,10 @@
 
 /public/uploads/*
 !/public/uploads/.gitkeep
+!/public/uploads/Bulbasaur.jpg
+!/public/uploads/Charmander.jpg
+!/public/uploads/Pikachu.jpg
+!/public/uploads/Squirtle.avif
 app/config/conn.php
 /db/
+To-do.txt
