@@ -3,9 +3,10 @@
 require __DIR__ . '/conn.php';
 
 $pokemons = [
-    ["Bulbasaur", "Um Pokémon do tipo Planta/Veneno.", "Planta", "bulbasaur.jpg", rand(0, 100), rand(0, 100), rand(-100, 100)],
-    ["Charmander", "Um Pokémon do tipo Fogo.", "Fogo", "charmander.webp", rand(0, 100), rand(0, 100), rand(-100, 100)],
-    ["Squirtle", "Um Pokémon do tipo Água.", "Água", "squirtle.avif", rand(0, 100), rand(0, 100), rand(-100, 100)],
+    ["Bulbasaur", "a visibly overweight grass/poison type poqmon", "Planta", "Bulbasaur.jpg", rand(0, 100), rand(0, 100), rand(-100, 100)],
+    ["Charmander", "This poqmon is perfect for you who don't have a stove at home", "Fogo", "Charmander.jpg", rand(0, 100), rand(0, 100), rand(-100, 100)],
+    ["Squirtle", "A poqm... wait, that thing you splashed on me is water, right?", "Água", "Squirtle.avif", rand(0, 100), rand(0, 100), rand(-100, 100)],
+    ["Pikachu", "this little guy has definitely been through a lot..", "Água", "Pikachu.jpg", rand(0, 100), rand(0, 100), rand(-100, 100)],
 ];
 
 foreach($pokemons as $p) {
