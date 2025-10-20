@@ -40,4 +40,4 @@ docker compose exec app php app/config/conn.php
 docker compose exec app php app/config/seed.php
 ```
 
-### That's it
+### Pronto!
