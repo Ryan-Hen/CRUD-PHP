@@ -1,6 +1,7 @@
 # 🧩 CRUD POQMON
 
-Um pequeno projeto em **PHP puro** com **MySQL** e **Docker**, desenvolvido para fins de estudo.  
+Um pequeno projeto em **PHP puro** com **MySQL** e **Docker**, desenvolvido para fins de estudo.
+
 O sistema permite **cadastrar, visualizar, editar e excluir Poqmons**, incluindo upload de imagem e dados descritivos.
 
 ---
