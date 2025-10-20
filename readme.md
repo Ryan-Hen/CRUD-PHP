@@ -20,8 +20,12 @@ O sistema permite **cadastrar, visualizar, editar e excluir Poqmons**, incluindo
 
 ```bash
 git clone https://github.com/Ryan-Hen/CRUD-PHP.git
-cd poqmon
+cd CRUD-PHP
 ```
+
+### renomear o arquivo app/config/conn-sample.php para -> conn.php
+
+### inserir os dados do seu banco nas variáveis do arquivo conn.php
 
 ### Subir os containers com Docker
 
